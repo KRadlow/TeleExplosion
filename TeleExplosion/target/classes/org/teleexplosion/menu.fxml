@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" prefHeight="600.0" prefWidth="800.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.teleexplosion.controlers.MenuController">
+    <AnchorPane prefHeight="600.0" prefWidth="800.0">
+        <GridPane id="menuGridPane" layoutY="180.0" prefHeight="240.0" prefWidth="800.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="179.0" minHeight="0.0" prefHeight="179.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="110.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <ImageView id="p1Img" fx:id="p1Img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" />
+            <ImageView id="p2Img" fx:id="p2Img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <ImageView id="p3Img" fx:id="p3Img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <ImageView id="p4Img" fx:id="p4Img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <TextField fx:id="p1TextField" alignment="CENTER" disable="true" prefHeight="26.0" prefWidth="132.0" promptText="Press Q to join" GridPane.rowIndex="2" />
+            <TextField fx:id="p2TextField" alignment="CENTER" disable="true" promptText="Press U to join" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="p3TextField" alignment="CENTER" disable="true" promptText="Press CONTROL to join" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="p4TextField" alignment="CENTER" disable="true" promptText="Press Num7 to join" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+          <TextField alignment="CENTER" disable="true" prefHeight="26.0" promptText="LUCAS" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <TextField alignment="CENTER" disable="true" prefHeight="26.0" promptText="PENNY" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+          <TextField alignment="CENTER" disable="true" prefHeight="26.0" promptText="LOLA" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+          <TextField alignment="CENTER" disable="true" promptText="GORDON" GridPane.rowIndex="1" />
+        </GridPane>
+        <Button alignment="CENTER" layoutX="600.0" layoutY="520.0" mnemonicParsing="false" onAction="#startGame" prefHeight="35.0" prefWidth="150.0" text="Play" />
+        <Button alignment="CENTER" layoutX="50.0" layoutY="520.0" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="35.0" prefWidth="150.0" text="Back" textAlignment="CENTER" />
+        <ImageView fx:id="logoMenu" fitHeight="100.0" fitWidth="500.0" layoutX="150.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="491.0" layoutY="480.0" mnemonicParsing="false" onAction="#nextMap" prefHeight="35.0" prefWidth="35.0" text="&gt;" />
+        <Button layoutX="275.0" layoutY="480.0" mnemonicParsing="false" onAction="#previousMap" prefHeight="35.0" prefWidth="35.0" text="&lt;" />
+        <TextField fx:id="mapList" alignment="CENTER" layoutX="325.0" layoutY="480.0" prefHeight="35.0" prefWidth="150.0" />
+    </AnchorPane>
+</VBox>
